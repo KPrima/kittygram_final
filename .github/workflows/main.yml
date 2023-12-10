@@ -83,7 +83,7 @@ jobs:
           # на сервере и в docker-compose.yml не указывать версию
           tags: kprima/kityygram_backend:latest 
 
-      frontend_tests:
+  frontend_tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -127,7 +127,7 @@ jobs:
           push: true
           tags: kprima/kittygram_frontend:latest
 
-    build_gateway_and_push_to_docker_hub:
+  build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
     runs-on: ubuntu-latest
     steps:
