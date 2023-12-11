@@ -1,10 +1,15 @@
-## KITTYGRAM - социальная сеть для любителей котиков!
+# **KITTYGRAM** - социальная сеть для любителей котиков!
 
-#### Что умеет Kittygram?
+### ОПИСАНИЕ ПРОЕКТА:
+
+#### Что умеет *Kittygram*?
 
 - позволяет Вам добавлять записи о своих котиках: поделитесь фотографией и личным достижением своего котейки. Также авторам доступно удаление и редактирование своих записей;
 - позволяет Вам просматривать записи о котиках других пользователей;
 
+<details>
+
+<summary>ИНСТРУКЦИЯ ПО ЗАПУСКУ ПРОЕКТА</summary>
 
 #### Развертывание проекта локально:
 
@@ -214,11 +219,18 @@ bash nginx: configuration file /etc/nginx/nginx.conf test is successful
     TELEGRAM_TO                    # id телеграм-аккаунта (можно узнать у @userinfobot, команда /start)
     TELEGRAM_TOKEN                 # токен бота (получить токен можно у @BotFather, /token, имя бота)
 ```
-    
 
-### Запросы к API
+</details>    
 
-Теперь вы можете отправлять запросы к api, например, создать пользователя. Пример POST-запроса к api/users/:
+<details>
+
+<summary>ПРИМЕРЫ ЗАПРОСОВ К API</summary>
+
+Теперь вы можете отправлять запросы к api, например: 
+
+- Создать пользователя. 
+Пример POST-запроса к api/users/:
+
 ```
 {
     "email": "user@mail.com",
@@ -226,3 +238,43 @@ bash nginx: configuration file /etc/nginx/nginx.conf test is successful
     "password": "user_password"
 }
 ```
+
+- Добавить запись о котейке.
+Пример POST запроса к api/cats/add/:
+
+```
+{
+    "name": "cats_name",
+    "color": "cats_color",
+    "birth_year": cats_birth_year
+}
+```
+
+- Просмотр всех котеек.
+GET запрос к api/cats/
+
+- Просмотр определенного котейки.
+GET запрос к api/cats/{cat_id}
+
+- Получить список кошачьих достижений.
+GET запрос к api/achievements/
+
+
+</details>
+
+### ИСПОЛЬЗОВАННЫЕ ТЕХНОЛОГИИ:
+* Python 3.9
+* Django 3.2
+* Django REST framework
+* Djoser
+* PostgreSQL
+* JavaScript
+* Docker
+* gunicorn
+* nginx
+
+### ОБ АВТОРЕ:
+
+*Прима Кристина*
+
+[KPrima](https://github.com/KPrima)
