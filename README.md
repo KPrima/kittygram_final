@@ -18,7 +18,9 @@
 2. Склонируйте репозиторий на свой компьютер:
 ```
     git clone git@github.com:KPrima/kittygram_final.git
-    
+```
+И с помощью команды перейдите в корневую директорию проекта:
+```
     cd kittygram_final
 ```
     
