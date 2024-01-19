@@ -52,7 +52,7 @@
 #### Деплой проекта на удаленном сервере:
 1. Склонируйте репозиторий на свой компьютер:
 ```
-    git clone git@github.com:Trishkin32/kittygram_final.git
+    git clone git@github.com:KPrima/kittygram_final.git
     
     cd kittygram_final
 ```
